@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        :root {
+            --main-bg-color: rgb(73, 42, 165);
+        }
+
+        footer {
+            height: 12vh;
+            background-color: var(--main-bg-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+
+            background-color: var(--main-bg-color);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 139px;
+            padding: 0 25px;
+        }
+
+        nav ul {
+            height: 58px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(55, 0, 255) font-weight: bolder;
+        }
+
+        .search {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            height: 27px;
+            width: 493px;
+            border-radius: 5px;
+            margin: 0 16px 0 56px;
+        }
+
+        .container {
+            min-height: calc(100vh - 58px - 12vh);
+        }
+
+        .btn {
+            padding: 5px 10px;
+            color: white;
+            background-color: var(--main-bg-color);
+            border: 2px solid white;
+            border-radius: 7px;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .slider {
+        
+            width: 80vw;
+            margin: 11px auto;
+            
+        }
+        .card{
+            width: 91vw;
+            margin: auto;
+        }
+        .my-2{
+            margin: 12px 12px 12px 12px;
+            
+        }
+        .card{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav style="display: flex;">
+            <div class="logo">
+                <img src="logo.pnj.svg">
+
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="slider">
+                <img src="e commerce" width="1200px" height="400px">
+
+            </div>
+            <div class="card">
+                <h2 class="my-2">Join the shopping fun</h2>
+                <div class="card item">
+                    <img src="trousers.webp" width="160px" height="160px">
+
+                
+                <div class="lines">
+                    <p>Trousers</p>
+                    <p>Min 20% off</p>
+                    <p>Grab now</p>
+                </div>
+            </div>
+            <div class="card item">
+                <img src="shoes.jpeg" width="160px" height="160px">
+
+            
+            <div class="lines">
+                <p>Shoes</p>
+                <p>Min 30% off</p>
+                <p>Grab now</p>
+            </div>
+        </div>
+        <div class="card item">
+            <img src="top.jpg" width="160px" height="160px">
+
+        
+        <div class="lines">
+            <p>Top</p>
+            <p>Min 50% off</p>
+            <p>Grab now</p>
+        </div>
+    </div>
+    <div class="card item">
+        <img src="skirt.jpg" width="160px" height="160px">
+
+    
+    <div class="lines">
+        <p>Skirt</p>
+        <p>Min 40% off</p>
+        <p>Grab now</p>
+    </div>
+</div>
+        </div>
+
+
+        </div>
+    
+        
+        
+
+    </main>
+    <footer>
+        <p class="text-center">copyright &copy; Mycart.com</p>
+    </footer>
+</body>
+
+</html>
